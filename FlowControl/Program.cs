@@ -61,8 +61,10 @@ namespace FlowControl
                                 if (oldr > 64) price2++;
                                 if (oldr >= 20 && oldr <=64) price3++;
                             }
-                            Console.WriteLine($"Antal personer: {grupp}");
-                            Console.WriteLine();
+                            Console.WriteLine($"\nAntal personer: {grupp}");
+                            Console.WriteLine($"Totalkostnad {price1*80 + price2*90 + price3*120}");
+
+                            Console.WriteLine($"\n(Ungdom: {price1}, Standard: {price3}, Pensionär: {price2})");
                         }
                         //  else if (age > 64) Console.WriteLine("Pensionärspris: 90kr");
                         else Console.WriteLine("Standardpris: 120kr");
@@ -98,7 +100,7 @@ namespace FlowControl
                             break;
                         }
                     default:
-                        Console.WriteLine("Felaktigt val");
+                        Console.WriteLine("Felaktigt val, försök igen.");
                         Console.ReadLine();
                         break;
                 }
