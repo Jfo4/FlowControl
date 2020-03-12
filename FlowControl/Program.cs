@@ -83,6 +83,7 @@ namespace FlowControl
                         Console.ReadLine();
                         break;
                     case "3":
+                        // Todo: Test om det finns flera blanktecken mellan orden.
                         Console.Clear();
                         Console.WriteLine("Skriv en mening med minst tre ord: ");
                         string tmpTre = Console.ReadLine();
